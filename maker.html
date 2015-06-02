@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/pageMaker-JSON.js"></script>
+</head>
+
+<body>
+<!-- Form 1: Site title logo and header colors -->
+<div id="part1" class="formPart">
+<h3>Site information</h3>
+<form>
+<label>Enter a name for your site:</label><br>
+<input type="text" id="title"/><br><br>
+<div class="formBkg">
+    <label>Upload your logo: </label><input type="file" id="logoFile" />
+    <div class="clear"></div>
+</div><br>
+
+    <label>Choose a primary color for your site:<br><small>This will determine the subheading text color and footer background.</small></label><br>
+    <div style="margin-top:5px;background-color: #3d3d3d;border: 1px solid #555555;">
+    <div class="colors" id="bb0000" style="background-color:#bb0000;"></div>
+    <div class="colors" id="0e0ea5" style="background-color:#0e0ea5;"></div>
+    <div class="colors" id="00b025" style="background-color:#00b025;"></div>
+    <div class="colors" id="000000" style="background-color:#000;"></div>
+    <div class="colors" id="555555" style="background-color:#555;"></div>
+    <br>
+    <span id="colorChoice">&nbsp;</span><input type="text" id="primColor" style="display:none;"/>
+    <div class="clear"></div>
+</div>
+<span id="error1" class="isRequired"></span>
+<button class="next">Next</button>
+</form>
+<div class="clear"></div>
+</div>
+
+<!-- Form 2: Section 1 - Main header and background image -->
+<div id="part2" class="formPart">
+<h3>First Section</h3>
+<form>
+<label>Choose a background image:</label><br>
+<input type="file" id="bkg1" /><br><br>
+<label>Type your main heading:</label>
+<input type="text" id="heading1" /><br>
+<span id="error2" class="isRequired"></span>
+<button class="back">Back</button>
+<button class="next">Next</button>
+</form>
+</div>
+
+<!--Form 3: Section 2 - About text -->
+<div id="part3" class="formPart">
+<h3>About Section</h3>
+<form>
+<label>Enter the text for your about section:</label><br>
+<textarea id="aboutText"></textarea><br>
+<span id="error3" class="isRequired"></span>
+<button class="back">Back</button>
+<button class="next">Next</button>
+</form>	
+<div class="clear"></div>
+</div>
+
+<!-- Form 4: Section 3 - Subheader and additional info-->
+<div id="part4" class="formPart">
+<h3>Additional Info Section</h3>
+<form>
+<label>Choose a background image:</label><br>
+<input type="file" id="bkg2" /><br><br>
+<label>Enter a section headline:</label>
+<input type="text" id="heading2" /><br><br>
+<label>Enter additional text:</label><br>
+<textarea id="addText"></textarea><br>
+<span id="error4" class="isRequired"></span>
+<button class="back">Back</button>
+<button class="next">Next</button>
+</form>
+<div class="clear"></div>
+</div>
+
+<!-- Form 5: Bottom section contact info and map -->
+<div id="part5" class="formPart">
+<h3>Contact Section</h3>
+<form>
+<label>Enter your street address:</label><br>
+<input type="text" id="busAddress" /><br><br>
+<label>Enter your state:</label>
+<input type="text" id="state"/><br><br>
+<label>Enter your zip code:</label>
+<input type="text" id="busZip"/>
+<span id="error5" class="isRequired"></span>
+<button class="back">Back</button>
+<button class="next">Finish</button>
+</form>
+<div class="clear"></div>
+</div>
+
+<!-- The actual webpage -->
+<div id="sitePage">
+<a name="top"></a>
+<header>
+    <div id="logo">LOGO</div>
+    <nav id="main">
+        <ul>
+            <li><a href="#top">HOME</a></li>
+            <li><a href="#sect1">ABOUT</a></li>
+            <li><a href="#sect2">MORE STUFF</a></li>
+            <li><a href="#sect3">CONTACT</a></li>
+        </ul>
+    </nav>
+<div class="clear"></div>
+</header>
+
+
+<section id="sectOne"><a name="sect1"></a>
+<h1 id="headerText">Main Header Text</h1>
+</section>
+
+<section id="sectTwo"><a name="sect2"></a>
+<h3>About</h3>
+<div id="col1" class="columnText">Column 1</div>
+<div id="col2" class="columnText">Column 2</div>
+<div class="clear"></div>
+</section>
+
+<section id="sectThree"><a name="sect3"></a>
+<div><h2 id="heading2">Subheading</h2><p id="addInfo">Additional Info</p>
+</div>
+<div class="clear"></div>
+</section
+
+
+<section id="sectFour"><a name="sect4"></a>
+<h3>CONTACT</h3>
+<form id="contactForm">
+<label>Your Name</label><br>
+<input type="text" id="name" name="name" /><br>
+<label>Your Email</label><br>
+<input type="text" id="email" name="email" /><br>
+<label>Your Message</label><br>
+<textarea id="msg" name="msg" rows="120" height="300px"></textarea><br>
+<input type="submit" value="send" id="send" />
+</form>
+<div id="map-canvas">
+</div>
+<div class="clear"></div>
+</section>
+
+<footer>&copy; 2015 <span id="siteName"></span> | <span id="compAddress">1234 Any St. Timbuktu, FU</span>  |  <a id="reset">reset</a>
+</footer>
+</div>
+</body>
+</html>
+
+<!-- RESOURCES
+
+http://batman-ipsum.com/
+
+http://deathtothestockphoto.com/
+
+-->

@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14pt;
+    font-family: "Arial", "Helvetica", sans-serif;
+    background-image: url("images/backgrounds/stone.jpg"); /* taken from http://seamless-pixels.blogspot.co.uk/ */
+    background-color: #a2cce6;
+    background-size: 100%;
+}
+
+.clear {
+    clear: both;
+    }
+
+h1 {
+    font-size: 3em;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 2.5em;
+    font-weight: normal;
+    }
+    
+h3 {
+    font-size: 1.35em;
+    font-weight: normal;
+    padding-left: 2%;
+    color: #123456;
+    margin-bottom: 0;
+    }
+    
+.formPart h3 {
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    }
+
+    
+.formPart input, .formPart textarea {
+    width: 95%;
+    background-color: #3d3d3d;
+    border: 1px solid #555555;
+    font-size: 1em;
+    padding: 3px;
+    color: #fff;
+}
+
+.isRequired {
+    line-height: 1.5em;
+    color: #ff0000;
+    background-color: #fff;
+}
+    
+
+#colorChoice {
+    float: right;
+    margin-right: 2.75em;
+    font-weight: bold;
+    } 
+
+#sitePage {
+	display:none;	
+}
+
+#part1, #part2, #part3, #part4, #part5 {
+	width: 30%;
+	margin: 2em auto;
+	padding: 0 0 2em 0;
+	display: none;
+    overflow: hidden;
+    color: #fff;
+}
+
+.next {
+    color: #3d3d3d;
+    background-color: #fff;
+    border: 0;
+    width: 5em;
+    border-radius: 8px;
+    font-size: 1.25em;
+    margin: 2em .5em;
+    float: right;
+    }
+    
+.back {
+    color: #3d3d3d;
+    background-color: #fff;
+    border: 0;
+    border-radius: 8px;
+    width: 5em;
+    font-size: 1.25em;
+    margin: 2em 0;
+    float: left;
+    }
+
+.colors {
+	width: 20px;
+	height: 20px;
+	margin: 1em .5em;
+	float: left;	
+	background-color: #123456;
+}
+
+#addText, #aboutText {
+    height: 10em;
+}  
+
+
+header {
+    height: 90px;
+    background-color: #eeeeee;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    /* used the creator at cssmatic.com/box-shadow for this because I'm lazy */
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.26);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.26);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.26);
+    }
+
+
+nav ul {
+    display: inline;
+    list-style: none;
+    height: 85px;
+    float: right;
+    margin: 0;
+    }
+    
+nav ul li {
+    float:left;
+    height: 90px;
+    padding: 1.5em;
+    border-right: 2px solid #333333;
+    }
+    
+nav a {
+    text-decoration: none;
+    color: #123456;
+    }
+
+nav a:hover {
+    text-decoration: underline;
+    }
+    
+#logo {
+    width: 222px;
+    height: 80px;
+    margin: 5px 1em;
+    float: left;
+    }
+    
+#sectOne {
+    width: 100%; 
+    height: auto;
+    min-height: 425px;
+    margin-top: 80px;
+    padding-top: 40px;
+    background-image: url("images/typing.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    color: #ffffff;
+}
+
+#sectTwo {
+    background-color: #fff;
+    height: auto;
+}
+
+.columnText {
+    width: 47%;
+    min-height: 200px;
+    color: #333333;
+    }
+    
+#col1 {
+    float: left;
+    margin: 1em 1% 1em 2%;
+    }
+    
+#col2 {
+    float: right;
+    margin: 1em 2% 1em 1%;
+    }
+
+#sectThree {
+    width: 100%;
+    height: 550px;
+    background-image: url("images/thinking.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    color: #ffffff;
+}
+
+#sectThree h2 {
+    padding-top: 50px;
+    }
+
+#sectThree div {
+    width: 50%;
+    padding: 0 25px 25px 25px;
+    margin: 25px auto;
+}  
+
+form {
+    padding: 2%;
+    width: 100%;
+    }
+    
+#contactForm {
+    margin-left: 2%;
+    width: 45%;
+    float: left;
+}
+
+#contactForm input {
+    margin-bottom: 2em;
+}
+
+#name, #email, #msg {
+    width: 100%;
+    }
+#msg {
+    height: 6em;
+    }
+
+#map-canvas {
+    width: 47%;
+    margin-right: 2%;
+    float: right;
+    height: 400px;
+    background-color: #555;
+    }
+    
+footer {
+    background-color: #123456;
+    color: #fff;
+    width: 100%;
+    margin: 1em auto 0 auto;
+    padding: .5em;
+    font-size: .75em;
+    line-height: 1.25em;
+    height: 30px;
+    text-align: center;
+}
